@@ -5,7 +5,7 @@
       <h1>Minhas tarefas</h1>
   
       <TaskListItem
-        v-if="tasks"
+        v-if="tasks && tasks.length > 0"
         v-for="task of tasks"
         :key="task.title"
         :task="task"
